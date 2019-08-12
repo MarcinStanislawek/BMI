@@ -1,4 +1,4 @@
-Check my app: (https://marcinstanislawek.github.io/BMI)
+[Check my app](https://MarcinStanislawek.github.io/BMI)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
