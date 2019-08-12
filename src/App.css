@@ -1,8 +1,20 @@
 .logo {
-  font-size: 30px;
-  background-color: #2fd89a;
-  margin-bottom: 50px;
+  background-color: #e8a87c;
+  height: 100px;
   text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 25px;
+  border-bottom-color: #e27d60;
+
+}
+
+body {
+  background-color: #E8E8E8;
+}
+
+.calculator {
+  margin-top: 50px;
 }
 
 

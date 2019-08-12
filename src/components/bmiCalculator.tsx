@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import './bmiCalculator.css';
 
 interface Props {
 
@@ -14,7 +14,9 @@ interface State {
 }
 
 function bmiInformation(bmi: number) {
-    if(bmi>=25) {
+    if (bmi === 0 || bmi === NaN || bmi === Infinity) {
+        return "Twoje BMI jest..."
+    } else if(bmi>=25) {
         return "Twoje BMI jest za wysokie!"
     } else if (bmi<18.5) {
         return "Twoje BMI jest za niskie!"
@@ -29,7 +31,7 @@ function Round(n: number, k: number)
     return Math.round(n*factor)/factor;
 }
 
- class BMICalculator extends React.PureComponent<Props, State> {
+ class BMICalculator extends React.Component<Props, State> {
 
 
     constructor(props: Props) {
@@ -54,27 +56,22 @@ function Round(n: number, k: number)
                 bmi: Round(weight/Math.pow(height/100, 2), 2),
                 info: bmiInformation(bmi),
                 }
-        } else if (name === 'bmi') {
-            state = {
-                weight,
-                height,
-                bmi,
-                info: bmiInformation(bmi),
-            }
-        }
+        } 
         this.setState(state)
     }
     render() {
         const {weight, height, bmi } = this.state
 
         return <div className="CalculatorContainer">
-            <h1>Sprawdź swoje BMI</h1>
+            <h1>Policz swoje BMI:</h1>
                  <label className="block">Wpisz wagę (w kg):</label>
                  <input className="block" name="weight" value={weight} onChange={this.handleOnChange} /> 
                  <label className="block">Wpisz wzrost (w cm):</label>
                  <input className="block" name="height" value={height} onChange={this.handleOnChange} /> 
                  <label className="block">Twoje BMI wynosi:</label>
                  <input className="block" name="bmi" value={bmi} onChange={this.handleOnChange} />
+                 <input className="info" name="info" value={bmiInformation(bmi)} onChange={this.handleOnChange} />
+
         </div>
 
     }

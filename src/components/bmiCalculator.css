@@ -1,0 +1,40 @@
+
+.CalculatorContainer {
+    background-color: #e27d60;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+}
+
+.block {
+    width: 40%;
+    display: inline-block;
+    text-align: left;
+    margin: 5px;
+    text-align: center;
+}
+
+.info{
+    margin-top: 40px;
+    width: 400px;
+    text-align: center;
+    font-size: 30px;
+    display:   block;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+h1 {
+    text-align: center;
+  }
+
+.button {
+    display: block;
+    width: 200px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}

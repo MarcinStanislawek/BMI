@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
-import { render } from 'react-dom';
-import BMICalculator from './components/index';
+import BMICalculator from './components/bmiCalculator';
 
 
 const App: React.FC = () => {
 
   return (
-    <div className="App">
+    <div className="container">
       <div className="logo">BMI Kalkulator!</div>
-        <BMICalculator />
+        <div className="calculator"><BMICalculator /></div>
     </div>
   );
 }
