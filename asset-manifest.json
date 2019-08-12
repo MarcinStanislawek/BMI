@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bmi/static/css/main.cf8dd2f4.chunk.css",
+    "main.js": "/bmi/static/js/main.7322d6b7.chunk.js",
+    "main.js.map": "/bmi/static/js/main.7322d6b7.chunk.js.map",
+    "runtime~main.js": "/bmi/static/js/runtime~main.7be4808b.js",
+    "runtime~main.js.map": "/bmi/static/js/runtime~main.7be4808b.js.map",
+    "static/js/2.d16ba94f.chunk.js": "/bmi/static/js/2.d16ba94f.chunk.js",
+    "static/js/2.d16ba94f.chunk.js.map": "/bmi/static/js/2.d16ba94f.chunk.js.map",
+    "index.html": "/bmi/index.html",
+    "precache-manifest.37a8ab894b5c5e5972fe21ae1d74e304.js": "/bmi/precache-manifest.37a8ab894b5c5e5972fe21ae1d74e304.js",
+    "service-worker.js": "/bmi/service-worker.js",
+    "static/css/main.cf8dd2f4.chunk.css.map": "/bmi/static/css/main.cf8dd2f4.chunk.css.map"
+  }
+}
